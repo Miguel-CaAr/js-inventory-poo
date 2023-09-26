@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inventory Product</title>
+    <link rel="stylesheet" href="styles/bootstrap.min.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light">
+      <a class="navbar navbar-brand" href="#"> Product app </a>
+    </nav>
+
+    <div class="container">
+      <div id="app" class="row pt-5">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-header">
+              <h4>Add Product</h4>
+            </div>
+            <form class="card-body" id="product-form">
+              <div class="form-group">
+                <label for="name">Product Name</label>
+                <input
+                  type="text"
+                  placeholder="Name"
+                  class="form-control"
+                  id="name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="price">Product cost per price</label>
+                <input
+                  type="numer"
+                  step="0.01"
+                  placeholder="Price"
+                  class="form-control"
+                  id="price"
+                />
+              </div>
+              <div class="form-group">
+                <label for="name">Product Quantity</label>
+                <input
+                  type="number"
+                  placeholder="quantity"
+                  class="form-control"
+                  id="quantity"
+                />
+              </div>
+              <div class="form-group">
+                <label for="name">Product date</label>
+                <input
+                  type="date"
+                  placeholder="year"
+                  class="form-control"
+                  id="date"
+                />
+              </div>
+              <input
+                type="submit"
+                value="Save"
+                class="btn btn-primary btn-block"
+              />
+            </form>
+          </div>
+        </div>
+        <div id="product-list" class="col-md-8">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Date</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="/scripts/app.js"></script>
+  </body>
+</html>
