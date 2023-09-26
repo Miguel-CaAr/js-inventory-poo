@@ -99,9 +99,9 @@ class UI {
     }
   }
 /**
- * 
- * @param {*} text 
- * @param {*} color 
+ * Funcion para mostrar un mensaje en la interfaz
+ * @param {string} text Mensaje descriptivo si se realizo o hay algun error 
+ * @param {string} color Clase que recibe como parametro para mostrar el color del mensaje
  */
   showMessage(text, color) {
     const productList = document.querySelector("#product-list");
